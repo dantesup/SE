@@ -1,17 +1,294 @@
-{% extends layout.html %}
+{% extends "layout.html" %}
 {% block head %}
     <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Inspiring Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+
+
+    <link href="{{ url_for('static', filename='css/nav.css') }}" rel="stylesheet" type="text/css" media="all"/>
+    <!-- For-Navigation-CSS -->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/flexslider.css') }}" type="text/css"
+          media="screen"/>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.css') }}"><!-- For-gallery-CSS -->
+
+    <!-- //custom-theme -->
+    <link href="{{ url_for('static', filename='css/bootstrap2.css') }}" rel="stylesheet" type="text/css"
+          media="all"/>
+    <link href="/static/css/style2.css" rel="stylesheet" type="text/css" media="all"/>
+
+
+    <!-- font-awesome-icons -->
+    <link href="/static/css/font-awesome.css" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Title</title>
-    </head>
-    <body>
+    <div class="sub-agile">
+        <div class="agile1">
+            <!-- navigation section -->
+            <div>
+                <p>
+                    <button id="trigger-overlay" type="button">
+                        <img src="/static/img/menu.png" class="img-responsive" alt="menu">
 
-    </body>
-    </html>
+                    </button>
+                </p>
+            </div>
+            <!-- open/close -->
+            <div class="overlay overlay-boxes">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="101%" viewBox="0 0 1440 806"
+                     preserveAspectRatio="none">
+                    <path d="m0.005959,200.364029l207.551124,0l0,204.342453l-207.551124,0l0,-204.342453z"/>
+                    <path d="m0.005959,400.45401l207.551124,0l0,204.342499l-207.551124,0l0,-204.342499z"/>
+                    <path d="m0.005959,600.544067l207.551124,0l0,204.342468l-207.551124,0l0,-204.342468z"/>
+                    <path d="m205.752151,-0.36l207.551163,0l0,204.342437l-207.551163,0l0,-204.342437z"/>
+                    <path d="m204.744629,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
+                    <path d="m204.744629,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
+                    <path d="m204.744629,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
+                    <path d="m410.416046,-0.36l207.551117,0l0,204.342437l-207.551117,0l0,-204.342437z"/>
+                    <path d="m410.416046,200.364029l207.551117,0l0,204.342453l-207.551117,0l0,-204.342453z"/>
+                    <path d="m410.416046,400.45401l207.551117,0l0,204.342499l-207.551117,0l0,-204.342499z"/>
+                    <path d="m410.416046,600.544067l207.551117,0l0,204.342468l-207.551117,0l0,-204.342468z"/>
+                    <path d="m616.087402,-0.36l207.551086,0l0,204.342437l-207.551086,0l0,-204.342437z"/>
+                    <path d="m616.087402,200.364029l207.551086,0l0,204.342453l-207.551086,0l0,-204.342453z"/>
+                    <path d="m616.087402,400.45401l207.551086,0l0,204.342499l-207.551086,0l0,-204.342499z"/>
+                    <path d="m616.087402,600.544067l207.551086,0l0,204.342468l-207.551086,0l0,-204.342468z"/>
+                    <path d="m821.748718,-0.36l207.550964,0l0,204.342437l-207.550964,0l0,-204.342437z"/>
+                    <path d="m821.748718,200.364029l207.550964,0l0,204.342453l-207.550964,0l0,-204.342453z"/>
+                    <path d="m821.748718,400.45401l207.550964,0l0,204.342499l-207.550964,0l0,-204.342499z"/>
+                    <path d="m821.748718,600.544067l207.550964,0l0,204.342468l-207.550964,0l0,-204.342468z"/>
+                    <path d="m1027.203979,-0.36l207.550903,0l0,204.342437l-207.550903,0l0,-204.342437z"/>
+                    <path d="m1027.203979,200.364029l207.550903,0l0,204.342453l-207.550903,0l0,-204.342453z"/>
+                    <path d="m1027.203979,400.45401l207.550903,0l0,204.342499l-207.550903,0l0,-204.342499z"/>
+                    <path d="m1027.203979,600.544067l207.550903,0l0,204.342468l-207.550903,0l0,-204.342468z"/>
+                    <path d="m1232.659302,-0.36l207.551147,0l0,204.342437l-207.551147,0l0,-204.342437z"/>
+                    <path d="m1232.659302,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
+                    <path d="m1232.659302,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
+                    <path d="m1232.659302,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
+                    <path d="m-0.791443,-0.360001l207.551163,0l0,204.342438l-207.551163,0l0,-204.342438z"/>
+                </svg>
+                <button type="button" class="overlay-close">Close</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#about" class="scroll">About</a></li>
+                        <li><a href="#services" class="scroll">Services</a></li>
+                        <li><a href="#team" class="scroll">Team</a></li>
+                        <li><a href="#gallery" class="scroll">Gallery</a></li>
+                        <li><a href="#stats" class="scroll">Stats</a></li>
+                        <li><a href="#contact" class="scroll">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /open/close -->
+            <!-- /navigation section -->
+
+        </div>
+        <a href="index.html">
+            <ul class="logo">
+                <li><i class="glyphicon glyphicon-book" aria-hidden="true"></i></li>
+                <li><h1>舆情监控系统</h1></li>
+            </ul>
+        </a>
+        <div class="number">
+            <p><a href="#contact" class="scroll"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+            <a href="{{ url_for('sign_login') }}">{{ blank }}</a>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="search-box">
+            <div id="sb-search" class="sb-search">
+                <form>
+                    <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
+                           id="search">
+                    <input class="sb-search-submit" type="submit" value="">
+                    <span class="sb-icon-search"> </span>
+                </form>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+
+    <!-- banner -->
+    <div class="w3l-banner">
+        <div class="banner-dott">
+            <div class="header">
+                <!-- //Header -->
+                <div class="container">
+                    <div class="flexslider-info">
+                        <section class="slider">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li>
+                                        <div class="w3l-info">
+                                            <h2>全网舆情,一网打尽</h2>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                    <p>Education is premise of progress & Life</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                    <p> Education is the most powerful weapon</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                                    <p>Education is passport to the future</p>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="w3l-info">
+                                            <h3>Education is important to our life</h3>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                    <p>Education is not pail but lighting of fire.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                    <p>Education is the key to success in life</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                                    <p>Education is not preparation,is life</p>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="w3l-info">
+                                            <h3>Education is important to our life</h3>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                                    <p>SAVING THE PLANET By educating people</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                                    <p>Education is to unlock the freedom</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="grid1">
+                                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                                    <p>The aim of education is not knowledge</p>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //banner -->
+
+
+    <!-- about -->
+
+    <!-- //Modal1 -->
+    <!-- //modal popup -->
+
+    <!-- main -->
+    <!-- search-scripts -->
+    <script src="/static/js/classie.js"></script>
+    <script src="/static/js/uisearch.js"></script>
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+    </script>
+    <!-- //search-scripts -->
+
+    <!-- js -->
+    <script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+    <!-- for bootstrap working -->
+    <script src="/static/js/bootstrap2.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- //js -->
+
+    <!-- Baneer-js -->
+    <!--FlexSlider-->
+    <script defer src="/static/js/jquery.flexslider.js"></script>
+    <!--Start-slider-script-->
+    <script type="text/javascript">
+
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!--End-slider-script-->
+    <!-- //Baneer-js -->
+
+    <script type="text/javascript" src="/static/js/numscroller-1.0.js"></script><!-- numscroller js file -->
+
+    <!-- js for navigation -->
+    <script src="/static/js/nav.js"></script>
+    <!-- //js for navigation -->
+
+    <!-- //here starts scrolling icon -->
+    <script src="/static/js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="/static/js/move-top.js"></script>
+    <script type="text/javascript" src="/static/js/easing.js"></script>
+    <!-- here stars scrolling script -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+
+            $().UItoTop({easingType: 'easeOutQuart'});
+
+        });
+    </script>
+    <!-- //here ends scrolling script -->
+    <!-- //here ends scrolling icon -->
+
+    <!-- scrolling script -->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+
 {% endblock %}
