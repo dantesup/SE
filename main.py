@@ -1,3 +1,4 @@
+# coding=utf-8
 from flask import Flask, render_template, url_for, request, session, redirect
 from flask_pymongo import PyMongo
 import bcrypt  # to hash the password
@@ -13,7 +14,6 @@ mongo = PyMongo(app)
 @app.route('/')
 def index():
     if 'email' in session:
-        # return redirect('http://yuqing.baidu.com/saas/public/system?cate_id=3135&relate=1&type=&time=30&timefrom=&timeto=&media=news&pro=&city=&county=&mediaText=%E5%85%A8%E9%83%A8%E6%96%B0%E9%97%BB')
         return render_template('index.html', blank=session['email'])
         # return 'You are logged in as ' + session['email']
     return render_template('index.html', blank='登录')
@@ -33,14 +33,12 @@ def sign_login():
             session['email'] = request.form['email_login']
             return redirect(url_for('index'))
     else:
-        print('cccccc')
         existing_user = users.find_one({'email': request.form.get('email_signup')})
         if existing_user is None:
             hashpass = bcrypt.hashpw(request.form['password_signup'].encode('utf-8'), bcrypt.gensalt())
-            users.insert({'email': request.form['email_signup'], 'password': hashpass})
-            print('111111')
+            users.insert({'email': request.form['email_signup'], 'password': hashpass,
+                          'username': request.form.get('username_signup'), 'intro': request.form.get('intro_signup')})
             session['email'] = request.form['email_signup']
-            print('22222')
             return redirect(url_for('index'))
         return 'That email already exists!'
     return render_template('sign_login.html')
@@ -48,7 +46,10 @@ def sign_login():
 
 @app.route('/user_info')
 def user_info():
-    return render_template('user_info.html')
+    users = mongo.db.users
+    login_user = users.find_one({'email': session['email']})
+    return render_template('user_info.html', username=login_user['username'], email=login_user['email'],
+                           intro=login_user['intro'])
 
 
 @app.route('/spider', methods=['POST', 'GET'])
