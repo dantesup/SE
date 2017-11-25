@@ -55,9 +55,9 @@
         <div class="clearfix"></div>
         <div class="search-box">
             <div id="sb-search" class="sb-search">
-                <form>
+                <form action="{{ url_for('spider') }}" method="post">
                     <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
-                           id="search" action="{{ url_for('spider') }}">
+                           id="search">
                     <input class="sb-search-submit" type="submit" value="">
                     <span class="sb-icon-search"> </span>
                 </form>

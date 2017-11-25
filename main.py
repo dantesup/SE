@@ -51,6 +51,12 @@ def user_info():
     return render_template('user_info.html')
 
 
+@app.route('/spider', methods=['POST', 'GET'])
+def spider():
+    return redirect('https://www.baidu.com/s?wd=%ssite:tieba.baidu.com' % request.form.get('search'))
+    # return render_template('spider.html')
+
+
 if __name__ == '__main__':
     app.secret_key = 'mysecret'
     app.run(debug=True)
