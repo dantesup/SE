@@ -16,8 +16,7 @@ def index():
         # return redirect('http://yuqing.baidu.com/saas/public/system?cate_id=3135&relate=1&type=&time=30&timefrom=&timeto=&media=news&pro=&city=&county=&mediaText=%E5%85%A8%E9%83%A8%E6%96%B0%E9%97%BB')
         return render_template('index.html', blank=session['email'])
         # return 'You are logged in as ' + session['email']
-        print('index')
-    return render_template('index.html', blank='登录  ')
+    return render_template('index.html', blank='登录')
     # return render_template('sign_login.html')
 
 
@@ -45,6 +44,11 @@ def sign_login():
             return redirect(url_for('index'))
         return 'That email already exists!'
     return render_template('sign_login.html')
+
+
+@app.route('/user_info')
+def user_info():
+    return render_template('user_info.html')
 
 
 if __name__ == '__main__':

@@ -1,35 +1,6 @@
 {% extends "layout.html" %}
 {% block head %}
     <title>index</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="Inspiring Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
-    <script type="application/x-javascript"> addEventListener("load", function () {
-        setTimeout(hideURLbar, 0);
-    }, false);
-
-    function hideURLbar() {
-        window.scrollTo(0, 1);
-    } </script>
-
-
-    <link href="{{ url_for('static', filename='css/nav.css') }}" rel="stylesheet" type="text/css" media="all"/>
-    <!-- For-Navigation-CSS -->
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/flexslider.css') }}" type="text/css"
-          media="screen"/>
-
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/lightbox.css') }}"><!-- For-gallery-CSS -->
-
-    <!-- //custom-theme -->
-    <link href="{{ url_for('static', filename='css/bootstrap2.css') }}" rel="stylesheet" type="text/css"
-          media="all"/>
-    <link href="/static/css/style2.css" rel="stylesheet" type="text/css" media="all"/>
-
-
-    <!-- font-awesome-icons -->
-    <link href="/static/css/font-awesome.css" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
@@ -48,45 +19,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="overlay overlay-boxes">
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="101%" viewBox="0 0 1440 806"
                      preserveAspectRatio="none">
-                    <path d="m0.005959,200.364029l207.551124,0l0,204.342453l-207.551124,0l0,-204.342453z"/>
-                    <path d="m0.005959,400.45401l207.551124,0l0,204.342499l-207.551124,0l0,-204.342499z"/>
-                    <path d="m0.005959,600.544067l207.551124,0l0,204.342468l-207.551124,0l0,-204.342468z"/>
-                    <path d="m205.752151,-0.36l207.551163,0l0,204.342437l-207.551163,0l0,-204.342437z"/>
-                    <path d="m204.744629,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
-                    <path d="m204.744629,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
-                    <path d="m204.744629,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
-                    <path d="m410.416046,-0.36l207.551117,0l0,204.342437l-207.551117,0l0,-204.342437z"/>
-                    <path d="m410.416046,200.364029l207.551117,0l0,204.342453l-207.551117,0l0,-204.342453z"/>
-                    <path d="m410.416046,400.45401l207.551117,0l0,204.342499l-207.551117,0l0,-204.342499z"/>
-                    <path d="m410.416046,600.544067l207.551117,0l0,204.342468l-207.551117,0l0,-204.342468z"/>
-                    <path d="m616.087402,-0.36l207.551086,0l0,204.342437l-207.551086,0l0,-204.342437z"/>
-                    <path d="m616.087402,200.364029l207.551086,0l0,204.342453l-207.551086,0l0,-204.342453z"/>
-                    <path d="m616.087402,400.45401l207.551086,0l0,204.342499l-207.551086,0l0,-204.342499z"/>
-                    <path d="m616.087402,600.544067l207.551086,0l0,204.342468l-207.551086,0l0,-204.342468z"/>
-                    <path d="m821.748718,-0.36l207.550964,0l0,204.342437l-207.550964,0l0,-204.342437z"/>
-                    <path d="m821.748718,200.364029l207.550964,0l0,204.342453l-207.550964,0l0,-204.342453z"/>
-                    <path d="m821.748718,400.45401l207.550964,0l0,204.342499l-207.550964,0l0,-204.342499z"/>
-                    <path d="m821.748718,600.544067l207.550964,0l0,204.342468l-207.550964,0l0,-204.342468z"/>
-                    <path d="m1027.203979,-0.36l207.550903,0l0,204.342437l-207.550903,0l0,-204.342437z"/>
-                    <path d="m1027.203979,200.364029l207.550903,0l0,204.342453l-207.550903,0l0,-204.342453z"/>
-                    <path d="m1027.203979,400.45401l207.550903,0l0,204.342499l-207.550903,0l0,-204.342499z"/>
-                    <path d="m1027.203979,600.544067l207.550903,0l0,204.342468l-207.550903,0l0,-204.342468z"/>
-                    <path d="m1232.659302,-0.36l207.551147,0l0,204.342437l-207.551147,0l0,-204.342437z"/>
-                    <path d="m1232.659302,200.364029l207.551147,0l0,204.342453l-207.551147,0l0,-204.342453z"/>
-                    <path d="m1232.659302,400.45401l207.551147,0l0,204.342499l-207.551147,0l0,-204.342499z"/>
-                    <path d="m1232.659302,600.544067l207.551147,0l0,204.342468l-207.551147,0l0,-204.342468z"/>
-                    <path d="m-0.791443,-0.360001l207.551163,0l0,204.342438l-207.551163,0l0,-204.342438z"/>
                 </svg>
                 <button type="button" class="overlay-close">Close</button>
                 <nav>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
                         <li><a href="#about" class="scroll">About</a></li>
                         <li><a href="#services" class="scroll">Services</a></li>
                         <li><a href="#team" class="scroll">Team</a></li>
                         <li><a href="#gallery" class="scroll">Gallery</a></li>
                         <li><a href="#stats" class="scroll">Stats</a></li>
-                        <li><a href="#contact" class="scroll">Contact</a></li>
+                        <li><a href="https://rebornhugo.github.io/" class="scroll">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -102,7 +45,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </a>
         <div class="number">
             <p><a href="#contact" class="scroll"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+            {% if blank == '登录' %}
             <a href="{{ url_for('sign_login') }}">{{ blank }}</a>
+            {% else %}
+            <a href="{{ url_for('user_info') }}">{{ blank }}</a>
+            {% endif %}
         </div>
 
         <div class="clearfix"></div>
@@ -110,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div id="sb-search" class="sb-search">
                 <form>
                     <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
-                           id="search">
+                           id="search" action="{{ url_for('spider') }}">
                     <input class="sb-search-submit" type="submit" value="">
                     <span class="sb-icon-search"> </span>
                 </form>
