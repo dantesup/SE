@@ -57,6 +57,11 @@ def spider():
     # return render_template('spider.html')
 
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+
 if __name__ == '__main__':
     app.secret_key = 'mysecret'
     app.run(debug=True)

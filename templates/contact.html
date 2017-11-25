@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+{% block head %}
+    <title>contact</title>
+
+{% endblock %}
+{% block body %}
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="about-head text-center ">
+                <h3>Contact</h3>
+            </div>
+            <div class="gal-btm">
+                <div class="map-home">
+                    <div class="col-md-4 drop-pad sign-gd-two">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i> NUAA, NanJing,
+                                <span>China.</span></li>
+                            <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i> +86 110 1234</li>
+                            <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a
+                                    href="mailto:info@example.com">hugo@nuaa.edu.cn</a></li>
+                        </ul>
+                        <h3 class="connect">Get Connected</h3>
+                        <ul class="top-links">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 contact-w3ls">
+                        <form action="#" method="post">
+                            <div class="col-md-5 col-sm-5 contact-left agileits-w3layouts">
+
+                                <div class="form-control">
+                                    <label class="header">Full Name <span>:</span></label>
+                                    <input type="text" name="First Name" placeholder="Name" required="">
+                                </div>
+
+                                <div class="form-control">
+                                    <label class="header">Email <span>:</span></label>
+                                    <input type="email" class="email" name="Email" placeholder="Email" required="">
+                                </div>
+
+                                <div class="form-control">
+                                    <label class="header">Mobile Number <span>:</span></label>
+                                    <input type="text" name="Number" placeholder="Mobile Number" required="">
+                                </div>
+                                <!-- <input type="text" class="email" name="Last Name" placeholder="Last Name" required=""> -->
+                            </div>
+                            <div class="col-md-7 col-sm-7 contact-right agileits-w3layouts">
+                                <div class="form-control">
+                                    <label class="header">Message <span>:</span></label>
+                                    <textarea name="Message" placeholder="Message" required=""></textarea>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <input type="submit" value="Send">
+                        </form>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

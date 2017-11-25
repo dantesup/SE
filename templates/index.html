@@ -29,7 +29,7 @@
                         <li><a href="#team" class="scroll">Team</a></li>
                         <li><a href="#gallery" class="scroll">Gallery</a></li>
                         <li><a href="#stats" class="scroll">Stats</a></li>
-                        <li><a href="https://rebornhugo.github.io/" class="scroll">Contact</a></li>
+                        <li><a href="{{ url_for('contact') }}">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,11 +44,12 @@
             </ul>
         </a>
         <div class="number">
-            <p><a href="#contact" class="scroll"><i class="fa fa-envelope" aria-hidden="true"></i></a></p>
+            <p><a href="{{ url_for('contact') }}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </p>
             {% if blank == '登录' %}
-            <a href="{{ url_for('sign_login') }}">{{ blank }}</a>
+                <a href="{{ url_for('sign_login') }}">{{ blank }}</a>
             {% else %}
-            <a href="{{ url_for('user_info') }}">{{ blank }}</a>
+                <a href="{{ url_for('user_info') }}">{{ blank }}</a>
             {% endif %}
         </div>
 
