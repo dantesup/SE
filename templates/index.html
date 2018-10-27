@@ -25,7 +25,7 @@
                     <ul>
                         <li><a href="{{ url_for('index') }}">Home</a></li>
                         <li><a href="#about" class="scroll">About</a></li>
-                        <li><a href="#services" class="scroll">舆情搜索</a></li>
+                        <li><a href="#services" class="scroll">交易预测</a></li>
                         <li><a href="#team" class="scroll">Team</a></li>
                         <li><a href="#gallery" class="scroll">Gallery</a></li>
                         <li><a href="#stats" class="scroll">Stats</a></li>
@@ -40,7 +40,7 @@
         <a href="index.html">
             <ul class="logo">
                 <li><i class="glyphicon glyphicon-book" aria-hidden="true"></i></li>
-                <li><h1>舆情监控系统</h1></li>
+                <li><h1>股票交易预测分析平台</h1></li>
             </ul>
         </a>
         <div class="number">
@@ -54,16 +54,16 @@
         </div>
 
         <div class="clearfix"></div>
-        <div class="search-box">
-            <div id="sb-search" class="sb-search">
-                <form action="{{ url_for('spider') }}" method="post">
-                    <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
-                           id="search">
-                    <input class="sb-search-submit" type="submit" value="">
-                    <span class="sb-icon-search"> </span>
-                </form>
-            </div>
-        </div>
+{#       查找 <div class="search-box">#}
+{#            <div id="sb-search" class="sb-search">#}
+{#                <form action="{{ url_for('spider') }}" method="post">#}
+{#                    <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"#}
+{#                           id="search">#}
+{#                    <input class="sb-search-submit" type="submit" value="">#}
+{#                    <span class="sb-icon-search"> </span>#}
+{#                </form>#}
+{#            </div>#}
+{#        </div>#}
         <div class="clearfix"></div>
     </div>
 
@@ -80,17 +80,17 @@
                                 <ul class="slides">
                                     <li>
                                         <div class="w3l-info">
-                                            <h2>全网舆情,一网打尽</h2>
+                                            <h2>股票交易,一网打尽</h2>
                                             <div class="col-md-4">
                                                 <div class="grid1">
                                                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                                    <p>最全面的舆情采集</p>
+                                                    <p>最精准的交易预测</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="grid1">
                                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                    <p>最专业的舆情分析</p>
+                                                    <p>最专业的市场分析</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
@@ -104,23 +104,23 @@
                                     </li>
                                     <li>
                                         <div class="w3l-info">
-                                            <h3>内容广泛全面</h3>
+                                            <h3>平台专业</h3>
                                             <div class="col-md-4">
                                                 <div class="grid1">
                                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                    <p>百度贴吧 超级玩家</p>
+                                                    <p>美股</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="grid1">
                                                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                                    <p>新浪微博 知乎豆瓣</p>
+                                                    <p>港股</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="grid1">
                                                     <i class="fa fa-book" aria-hidden="true"></i>
-                                                    <p>天涯猫扑 网易凤凰</p>
+                                                    <p>A股</p>
                                                 </div>
                                             </div>
                                             <div class="clearfix"></div>
@@ -132,19 +132,19 @@
                                             <div class="col-md-4">
                                                 <div class="grid1">
                                                     <i class="fa fa-book" aria-hidden="true"></i>
-                                                    <p>基于LSTM的情感预测</p>
+                                                    <p>基于深度学习的交易预测</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="grid1">
                                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                                    <p>基于CNN的文本分类</p>
+                                                    <p>基于scrapy的信息爬取</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-4">
                                                 <div class="grid1">
                                                     <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                                    <p>基于MongoDB的数据存储</p>
+                                                    <p>基于MongoDB数据存储</p>
                                                 </div>
                                             </div>
                                             <div class="clearfix"></div>
